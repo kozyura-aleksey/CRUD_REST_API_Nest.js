@@ -1,7 +1,6 @@
 export class AddToUserDto {
-    readonly id: string;
-    readonly email: string;
-    readonly password: string;
-    readonly nickame: string;
-    readonly token: string;
+  id: string;
+  email: string;
+  password: string;
+  nickame: string;
 }
