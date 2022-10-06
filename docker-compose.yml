@@ -6,7 +6,7 @@ services:
     depends_on:
       - postgres
     environment:
-      PSQL_HOST: postgres
+      POSTGRES_HOST: postgres
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: crud_nest
@@ -28,6 +28,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: crud_nest
+      POSTGRES_HOST: postgres
 
 volumes:
   postgres:
