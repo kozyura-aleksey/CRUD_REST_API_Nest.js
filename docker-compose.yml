@@ -10,7 +10,7 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: crud_nest
-      DATABASE_URL: postgres://postgres:admin@localhost:5432/crud_nest
+      DATABASE_URL: postgres://postgres:admin@postgres:5432/crud_nest
       NODE_ENV: development
       PORT: 7000
     ports:
