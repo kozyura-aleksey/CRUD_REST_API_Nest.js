@@ -1,11 +1,5 @@
-import {
-  HttpException,
-  HttpStatus,
-  Injectable,
-  UseGuards,
-} from "@nestjs/common";
+import { HttpException, HttpStatus, Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { JwtAuthGuard } from "../auth/jwt-auth.guard";
 import { findUserDto } from "../users/dto/find-user.dto";
 import { Repository } from "typeorm";
 import { CreateTagDto } from "./dto/create-tag.dto";

@@ -20,23 +20,14 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm ci
-      - run: npm run build --if-present
-
-  test:
-    runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [10.x, 12.x, 14.x, 15.x]
-
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - run: npm ci
-      - run: npm run test
-      - run: npm run test:e2e
+      # install applicaion dependencies
+      - name: Install dependencies
+      - run: |
+          npm install
+          npm ci
+      # build and test the apps
+      - name: build
+      - run: |
+          npm run build
+          npm run test
+          npm run test:e2e

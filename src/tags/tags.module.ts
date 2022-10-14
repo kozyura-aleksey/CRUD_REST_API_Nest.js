@@ -1,5 +1,4 @@
 import { forwardRef, Module } from "@nestjs/common";
-import { JwtModule, JwtService } from "@nestjs/jwt";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { AuthModule } from "../auth/auth.module";
 import { User } from "../users/users.model";

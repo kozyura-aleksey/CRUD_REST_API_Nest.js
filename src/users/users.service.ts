@@ -5,7 +5,6 @@ import { CreateUserDto } from "./dto/create-user.dto";
 import { updateUserDto } from "./dto/update-user.dto";
 import { User } from "./users.model";
 import { deleteUserDto } from "./dto/delete-user.dto";
-import { JwtAuthGuard } from "../auth/jwt-auth.guard";
 import { findUserDto } from "./dto/find-user.dto";
 
 @Injectable()

@@ -1,4 +1,4 @@
-import { IsString, IsUUID, isUUID, Length } from "class-validator";
+import { IsString, IsUUID, Length } from "class-validator";
 import { Tag } from "../tags/tags.model";
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
 

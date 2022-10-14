@@ -4,7 +4,6 @@ import {
   Delete,
   Get,
   Param,
-  ParseArrayPipe,
   Post,
   Put,
   UseGuards,
@@ -12,7 +11,6 @@ import {
 import { JwtAuthGuard } from "../auth/jwt-auth.guard";
 import { findUserDto } from "../users/dto/find-user.dto";
 import { CreateTagDto } from "./dto/create-tag.dto";
-import { deleteTagDto } from "./dto/deleteTag.dto";
 import { getOneTagDto } from "./dto/getOneTag.dto";
 import { sortTagDto } from "./dto/sortTag.dto";
 import { updateTagDto } from "./dto/updateTag.dto";

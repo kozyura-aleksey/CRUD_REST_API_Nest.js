@@ -1,12 +1,6 @@
 import { IsString, Length } from "class-validator";
 import { User } from "../users/users.model";
-import {
-  Column,
-  Entity,
-  ManyToOne,
-  PrimaryColumn,
-  PrimaryGeneratedColumn,
-} from "typeorm";
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from "typeorm";
 
 @Entity()
 export class Tag {

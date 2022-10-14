@@ -1,11 +1,9 @@
 import { Injectable } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
-import { deleteTagDto } from "../tags/dto/deleteTag.dto";
 import { Tag } from "../tags/tags.model";
 import { Repository } from "typeorm";
 import { AddToUserDto } from "./dto/add-to-user.dto";
 import { GetTagsDto } from "./dto/get-tags.dto";
-import { User } from "./users.model";
 
 @Injectable()
 export class UserTagService {
