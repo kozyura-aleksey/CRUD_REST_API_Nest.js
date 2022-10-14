@@ -9,6 +9,7 @@ export class AuthController {
   @Post("/singin")
   singIn(@Body() dto: CreateUserDto) {
     return this.authService.singIn(dto);
+    ///
   }
 
   @Post("/login")
