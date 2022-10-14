@@ -11,7 +11,6 @@ import { JwtAuthGuard } from "../auth/jwt-auth.guard";
 import { AddToUserDto } from "./dto/add-to-user.dto";
 import { GetTagsDto } from "./dto/get-tags.dto";
 import { UserTagService } from "./user-tag.service";
-import { UsersService } from "./users.service";
 
 @UseGuards(JwtAuthGuard)
 @Controller("user/tag")
