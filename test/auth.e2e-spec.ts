@@ -19,7 +19,6 @@ describe("AuthController (e2e)", () => {
   beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
       imports: [AppModule, AuthModule],
-      providers: [AppModule, AuthModule],
     }).compile();
 
     app = module.createNestApplication();
