@@ -21,7 +21,6 @@ export class UserTagController {
   @Post("")
   checkAndAddToUserTags(id: string, dto: AddToUserDto) {
     return this.userTagService.checkAndAddToUserTags(id, dto);
-    //
   }
 
   @Delete(":id")
